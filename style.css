@@ -84,3 +84,8 @@ a {
 #close_nav_btn {
     float: right;
 }
+
+.hide_div {
+    display: none !important;
+    background-color: red !important;
+}

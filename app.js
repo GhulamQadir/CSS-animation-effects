@@ -3,5 +3,6 @@ openNavbar = () => {
 }
 
 closeNavbar = () => {
-    document.getElementById('open_nav_div').style.display = "none"
+    let a = document.getElementById('open_nav_div')
+    a.className += ' hide_div'
 }
