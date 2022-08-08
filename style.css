@@ -87,5 +87,21 @@ a {
 
 .hide_div {
     display: none !important;
-    background-color: red !important;
+}
+
+
+
+
+.box {
+    float: left;
+    overflow: hidden;
+    background: #f0e68c;
+}
+
+/* Add padding and border to inner content
+for better animation effect */
+.box-inner {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #a29415;
 }
