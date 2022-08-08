@@ -34,21 +34,6 @@ a {
     padding-left: 90px;
 }
 
-#toggle_btn {
-    display: none;
-    float: right;
-}
-
-@media screen and (max-width: 700px) {
-    .links_div {
-        display: none !important;
-    }
-
-    #toggle_btn {
-        display: block;
-    }
-}
-
 
 /* animating from top to bottom */
 /* #on_screen_change_links {
@@ -67,35 +52,50 @@ a {
 } */
 
 
+#open_nav_btn {
+    display: none;
+    float: right;
+}
 
 #open_nav_div {
     display: none;
-    animation-duration: 0.7s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-name: slideInLeft;
     background-color: green;
     top: -10%;
     position: relative;
-    transition: all 1s ease-out;
 }
 
 #close_nav_btn {
     float: right;
 }
 
-.hide_div {
-    display: none !important;
+
+
+@media screen and (max-width: 700px) {
+    .links_div {
+        display: none !important;
+    }
+
+    #open_nav_btn {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 701px) {
+
+    #open_nav_div {
+        display: none !important;
+    }
 }
 
 
 
 
+/* Animated Box(Div) */
 .box {
     float: left;
     overflow: hidden;
     background: #f0e68c;
+    margin-top: 20px;
 }
 
 /* Add padding and border to inner content
