@@ -1,5 +1,6 @@
 @keyframes slideInLeft {
     0% {
+        /* Can change transition if from left side just do it 100% */
         transform: translateX(-100%);
     }
 
@@ -16,6 +17,8 @@ header {
     animation-name: slideInLeft;
     background: #666;
     padding: 40px;
+    position: sticky;
+    top: 0;
 }
 
 body {
@@ -61,7 +64,6 @@ a {
     display: none;
     background-color: green;
     top: -10%;
-    position: relative;
 }
 
 #close_nav_btn {
