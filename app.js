@@ -14,7 +14,7 @@ $(document).ready(function () {
     $("#open_nav_btn").click(function () {
         $("#open_nav_div").animate({
             width: "show"
-        }, 1000);
+        }, 700);
     });
 });
 
@@ -23,6 +23,6 @@ $(document).ready(function () {
     $("#close_nav_btn").click(function () {
         $("#open_nav_div").animate({
             width: "hide"
-        }, 1000);
+        }, 700);
     });
 });

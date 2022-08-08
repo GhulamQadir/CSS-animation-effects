@@ -17,8 +17,10 @@ header {
     animation-name: slideInLeft;
     background: #666;
     padding: 40px;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
 }
 
 body {
@@ -35,6 +37,14 @@ a {
 
 .links {
     padding-left: 90px;
+    font-size: 17px;
+    transition-property: font-size;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.links:hover {
+    font-size: 20px;
 }
 
 
@@ -63,7 +73,9 @@ a {
 #open_nav_div {
     display: none;
     background-color: green;
-    top: -10%;
+    top: 0;
+    position: fixed;
+    width: 70%;
 }
 
 #close_nav_btn {
