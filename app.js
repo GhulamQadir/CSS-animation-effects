@@ -1,28 +1,15 @@
-
-$(document).ready(function () {
-    $(".slide-toggle").click(function () {
-        $(".box").animate({
-            width: "toggle"
-        });
-    });
-});
+openNavDiv = () => {
+    let a = document.getElementById('open_nav_div')
+    a.className = " showDiv"
+}
 
 
+closeNavDiv = () => {
+    let b = document.getElementById('open_nav_div')
+    b.className += " hideDiv"
 
-// Animated Navbar 
-$(document).ready(function () {
-    $("#open_nav_btn").click(function () {
-        $("#open_nav_div").animate({
-            width: "show"
-        }, 700);
-    });
-});
+    setTimeout(() => {
+        b.className = " none"
+    }, 550)
+}
 
-
-$(document).ready(function () {
-    $("#close_nav_btn").click(function () {
-        $("#open_nav_div").animate({
-            width: "hide"
-        }, 700);
-    });
-});

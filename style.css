@@ -9,6 +9,7 @@
     }
 }
 
+
 header {
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
@@ -43,9 +44,51 @@ a {
     transition-delay: 0.2s;
 }
 
+
 .links:hover {
     font-size: 20px;
 }
+
+
+
+.showDiv {
+    display: block !important;
+    background-color: green !important;
+    top: 0 !important;
+    position: fixed !important;
+    width: 70% !important;
+
+    animation-duration: 0.6s !important;
+    animation-timing-function: ease-in-out !important;
+    animation-delay: 0s !important;
+    animation-iteration-count: 1 !important;
+    animation-name: slideInLeft !important;
+}
+
+@keyframes slideInRight {
+    0% {
+        /* Can change transition if from left side just do it 100% */
+        transform: translateX(70%) !important;
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.hideDiv {
+    animation-duration: 0.6s !important;
+    animation-timing-function: ease-in-out !important;
+    animation-delay: 0s !important;
+    animation-iteration-count: 1 !important;
+    animation-name: slideInRight !important;
+}
+
+.none {
+    display: none;
+}
+
 
 
 /* animating from top to bottom */
@@ -103,7 +146,7 @@ a {
 
 
 .container {
-    animation: transitionIn 0.8s;
+    animation: transitionIn 1s;
     margin-top: 120px;
 }
 
