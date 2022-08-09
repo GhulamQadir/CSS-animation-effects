@@ -28,6 +28,7 @@ toggle = () => {
 
     let toggleButton = document.getElementById('hamburger__toggle')
 
+
     if (!buttonClicked) {
         buttonClicked = true
         helo()
@@ -43,10 +44,13 @@ toggle = () => {
 }
 
 
-
-
 const button = document.querySelector(".hamburger__toggle");
 button.addEventListener("click", () => button.classList.toggle("toggled"));
 
+
+myToggle = () => {
+    let a = document.getElementById('navIcon')
+    a.className += " mynavIcon"
+}
 
 
