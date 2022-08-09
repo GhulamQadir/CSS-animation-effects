@@ -13,3 +13,40 @@ closeNavDiv = () => {
     }, 550)
 }
 
+
+
+helo = () => {
+    console.log("helo")
+}
+hi = () => {
+    console.log("hi")
+}
+
+let buttonClicked = false
+
+toggle = () => {
+
+    let toggleButton = document.getElementById('hamburger__toggle')
+
+    if (!buttonClicked) {
+        buttonClicked = true
+        helo()
+        return;
+    }
+
+    if (buttonClicked) {
+        buttonClicked = false
+        hi()
+        return;
+    }
+
+}
+
+
+
+
+const button = document.querySelector(".hamburger__toggle");
+button.addEventListener("click", () => button.classList.toggle("toggled"));
+
+
+
