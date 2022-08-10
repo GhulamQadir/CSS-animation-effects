@@ -15,42 +15,42 @@ closeNavDiv = () => {
 
 
 
-helo = () => {
-    console.log("helo")
-}
-hi = () => {
-    console.log("hi")
-}
-
-let buttonClicked = false
-
-toggle = () => {
-
-    let toggleButton = document.getElementById('hamburger__toggle')
 
 
-    if (!buttonClicked) {
-        buttonClicked = true
-        helo()
-        return;
-    }
-
-    if (buttonClicked) {
-        buttonClicked = false
-        hi()
-        return;
-    }
-
-}
 
 
-const button = document.querySelector(".hamburger__toggle");
-button.addEventListener("click", () => button.classList.toggle("toggled"));
-
+let button1Clicked = false
 
 myToggle = () => {
     let a = document.getElementById('navIcon')
-    a.className += " mynavIcon"
+    let b = document.getElementById('toggleButton')
+
+
+    if (!button1Clicked) {
+        button1Clicked = true
+
+        setTimeout(() => {
+            b.innerHTML = '<i id="navIcon" class="fa fa-times" aria-hidden="true"></i>'
+        }, 150)
+        a.className += " navMenuIcon"
+
+        return;
+    }
+
+
+    if (button1Clicked) {
+        button1Clicked = false
+
+        setTimeout(() => {
+            b.innerHTML = '<i id="navIcon"class="fa fa-bars" aria-hidden="true"></i>'
+        }, 150)
+        a.className += " navCloseIcon"
+
+        return;
+    }
+
+
+ 
 }
 
 

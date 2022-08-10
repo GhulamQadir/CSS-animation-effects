@@ -22,6 +22,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    height: 10px;
 }
 
 body {
@@ -176,91 +177,18 @@ a {
     display: block;
     position: relative;
     margin: 50px auto;
+    height: 24px;
+    cursor: pointer;
 }
 
-.mynavIcon {
-    transform: rotate(60deg) !important;
+.navMenuIcon {
+    transform: rotate(50deg) !important;
+    transition: ease-in 0.15s;
+    height: 12px;
 }
 
-
-
-
-
-.hamburger__toggle {
-    display: block;
-    position: relative;
-    background-color: #3d3d3d;
-    width: 40px;
-    height: 40px;
-    margin: 50px auto;
-    border-radius: 50%;
-    border: none;
-}
-
-/* give the span element and related pseudo-elements the appearance of white lines */
-.hamburger__icon,
-.hamburger__icon::before,
-.hamburger__icon::after {
-    text-align: center;
-    position: absolute;
-    width: 20px;
-    height: 2px;
-    border-radius: 4px;
-    background-color: white;
-}
-
-/* center the span element in the middle of its containing button */
-.hamburger__icon {
-    top: calc(50% - 2px);
-    left: calc(50% - 15px);
-}
-
-/* position the two pseudo-elements to the very left */
-.hamburger__icon::before,
-.hamburger__icon::after {
-    content: "";
-    left: 0;
-}
-
-/* this is the top dash of the hamburger */
-.hamburger__icon::before {
-    bottom: 8px;
-}
-
-/* this is the bottom dash of the hamburger */
-.hamburger__icon::after {
-    top: 8px;
-}
-
-/* TOGGLE STYLES FOR THE BUTTON */
-
-/* rotate middle dash of hamburger */
-.toggled .hamburger__icon {
-    height: 3px;
-    width: 34px;
-    left: 5px;
-    top: calc(50% - 2px);
-    transform: rotate(-45deg);
-    background-color: red;
-}
-
-/* rotate bottom dash of hamburger counter clockwise */
-.toggled .hamburger__icon::after {
-    width: 34px;
-    height: 3px;
-    top: -1px;
-    transform: rotate(-270deg);
-    background-color: red;
-}
-
-/* hide the top dash by scaling it to 0 */
-.toggled .hamburger__icon::before {
-    transform: scale(0);
-}
-
-/* TRANSITION */
-/* adjust duration to see it happen slower */
-.hamburger__icon,
-.hamburger__icon::after {
-    transition: all 0.3s linear;
+.navCloseIcon {
+    transform: rotate(-50deg) !important;
+    transition: ease-in 0.15s;
+    height: 10px;
 }
