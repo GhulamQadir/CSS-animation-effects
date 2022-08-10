@@ -4,8 +4,14 @@ html {
     scroll-behavior: smooth;
 }
 
+#main_div {
+    /* for fade animation unresponsiveness */
+    overflow-x: hidden
+}
 
 
+
+/*        When page loads, this animation works          */
 .container {
     animation: transitionIn 1s;
     margin-top: 120px;
@@ -31,4 +37,23 @@ html {
 
 .containers_links {
     color: blue;
+    margin: 20px;
+}
+
+
+#main_div {
+    /* for fade animation unresponsiveness */
+    overflow-x: hidden
+}
+
+.card {
+    margin: 100px 30px 50px 30px;
+}
+
+.card-img-top {
+    height: 400px;
+}
+
+.testing {
+    display: none;
 }
