@@ -1,14 +1,4 @@
-html {
-    scroll-behavior: smooth;
-}
-
-#links_container {
-    padding-top: 100px !important;
-}
-
-.containers_links {
-    color: blue;
-}
+/*                   Navbar Styling            */
 
 @keyframes slideInLeft {
     0% {
@@ -22,7 +12,7 @@ html {
 }
 
 
-header {
+nav {
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
@@ -176,19 +166,16 @@ a {
 }
 
 
-/* .hello {
-    transition: cubic-bezier(0.165, 0.84, 0.44, 1) !important;
-    transform: translate(50px, 100px);
-} */
 
 
 
 
+/*            Navbar Animated Toggle button styling             */
 
 #toggleButton {
     display: block;
     position: relative;
-    margin: 50px auto;
+    margin: 10px auto;
     height: 24px;
     cursor: pointer;
 }
