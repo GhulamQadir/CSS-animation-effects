@@ -15,13 +15,37 @@
 
     <div class="container">
         <ul class="thumb">
-            <li><a href="images/img1.webp" target="img_box"><img src="images/img1.webp"></a></li>
-            <li><a href="images/img2.webp" target="img_box"><img src="images/img2.webp"></a></li>
+            <li><a class="links" onclick="return false" href="images/img1.webp" target="imgBox"><img
+                        src="images/img1.webp"></a></li>
+            <li><a class="links" onclick="return false" href="images/img2.webp" target="imgBox"><img
+                        src="images/img2.webp"></a></li>
         </ul>
 
-        <div class="img_box">
-            <img src="images/img1.webp">
+        <div class="imgBox">
+            <img id="bigImage" src="images/img1.webp">
         </div>
     </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(() => {
+            $('.thumb a').mouseover(function (e) {
+                e.preventDefault();
+                $('.imgBox img').attr("src", $(this).attr("href"))
+            })
+
+        })
+
+        // $('.links').click(function (e) {
+        //     e.preventDefault();
+        // });
+
+    </script>
+</body>
 
 </html>
